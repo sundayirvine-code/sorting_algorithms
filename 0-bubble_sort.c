@@ -14,6 +14,10 @@ void bubble_sort(int *array, size_t size)
 	size_t flag = size - 1, i;
 	int current, next;
 
+	if (size < 2){
+		return;
+	}
+
 	while (true){
 		for(i = 0; i < size - 1; i++){
 			current = array[i];

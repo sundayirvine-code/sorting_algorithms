@@ -14,13 +14,8 @@ void insertion_sort_list(listint_t **list)
 	current = NULL;
 	previous = NULL;
 	next = NULL;
-	
-	/*empty list*/
-	if (!(*list) || !list)
-		return;
 
-	/*one element in list*/
-	if (!(*list) -> next)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
 	h = *list;
